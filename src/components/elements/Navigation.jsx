@@ -1,11 +1,12 @@
 import { useNavigate, NavLink } from "react-router-dom"
+import { removeToken } from "../../helpers/token"
 
 const Navigation = () => {
 
   const navigate = useNavigate()
 
   const closeSession = () => {
-    localStorage.removeItem("login-email")
+    removeToken()
     navigate('/login')
   }
 
@@ -18,6 +19,7 @@ const Navigation = () => {
               <div className="flex items-center space-x-1">
                 <NavLink to="/" className="link">Productos</NavLink>
                 <NavLink to="/invoices" className="link">Mis facturas</NavLink>
+                <NavLink to="/subscriptions" className="link">Mis suscripciones</NavLink>
                 <a onClick={closeSession} className="link cursor-pointer">Cerrar sesión</a>
               </div>
             </div>

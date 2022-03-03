@@ -1,4 +1,5 @@
 import { useNavigate, Navigate } from "react-router-dom"
+import { getToken, setToken } from "../../helpers/token"
 
 const Login = () => {
 
@@ -11,11 +12,11 @@ const Login = () => {
     const data = new FormData(form)
     const email = data.get('email')
 
-    localStorage.setItem("login-email", email)
+    setToken(email)
     navigate('/')
   }
 
-  if (localStorage.getItem("login-email")) return <Navigate to="/" />
+  if (getToken()) return <Navigate to="/" />
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">

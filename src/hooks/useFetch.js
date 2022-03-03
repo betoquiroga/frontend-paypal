@@ -13,7 +13,7 @@ const useFetch = (url) => {
     fetch(baseUrl)
       .then(resp => {
         if(resp.status !== 200) {
-          setError("Error al encontrar el producto")
+          setError("Error en la petición")
         }
         return resp.json()
       })

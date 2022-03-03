@@ -1,12 +1,10 @@
 import { Outlet, Navigate } from 'react-router-dom'
-import Navigation from "./Navigation"
+import Navigation from "./elements/Navigation"
 import "../styles/styles.css"
-
+import { getToken } from '../helpers/token'
 
 const App = () => {
-
-  if (!localStorage.getItem("login-email")) return <Navigate to="/login" />
-
+  if (!getToken()) return <Navigate to="/login" />
   return (
     <>
       <Navigation />
