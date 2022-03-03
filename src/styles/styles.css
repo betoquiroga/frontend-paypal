@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+  @apply py-4 px-2 text-gray-100 transition duration-100 hover:text-gray-300 text-sm;
+}
+
+.th {
+  @apply py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-100 uppercase;
+}
+
+.tr {
+  @apply bg-gray-800 border-b dark:bg-gray-200;
+}
+
+.td {
+  @apply py-4 px-6 text-sm font-medium text-gray-600 whitespace-nowrap;
+} 
