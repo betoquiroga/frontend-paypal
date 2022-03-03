@@ -27,10 +27,10 @@ const Login = () => {
             <div>
               <label className="block text-xs font-bold text-gray-600" htmlFor="email">Dirección de correo electrónico</label>
               <input type="email" name="email"
-                  className="w-full px-4 py-1 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500" />
+                  className="w-full px-4 py-1 mt-2 border rounded-md focus:outline-none focus:ring-1" />
             </div>
             <div>
-                <button className="px-4 py-1 w-full mt-4 text-gray-200 bg-slate-800 rounded-md hover:bg-slate-700">Login</button>
+                <button className="button">Login</button>
             </div>
           </div>
         </form>

@@ -16,4 +16,8 @@
 
 .td {
   @apply py-4 px-6 text-sm font-medium text-gray-600 whitespace-nowrap;
-} 
+}
+
+.button {
+  @apply px-4 py-1 w-full mt-4 text-gray-200 bg-slate-800 rounded-md hover:bg-slate-700;
+}

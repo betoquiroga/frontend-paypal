@@ -51,7 +51,7 @@ const Product = () => {
           <li><b>Detalle: </b>{product.description}</li>
           <li><b>Precio: </b>${product.price} USD</li>
           { order && <li><b>ID de la orden de compra: </b>{order.id}</li> }
-          { !order && <button onClick={handleOrder} className="px-4 py-1 w-full mt-4 text-gray-200 bg-slate-800 rounded-md hover:bg-slate-700">Comprar</button> }
+          { !order && <button onClick={handleOrder} className="button">Comprar</button> }
         </ul>  
       </div>  
     </div>
