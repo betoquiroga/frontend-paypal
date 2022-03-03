@@ -11,6 +11,7 @@ import Product from './components/pages/Product'
 import Invoices from './components/pages/Invoices';
 import Home from './components/pages/Home';
 import Subscriptions from './components/pages/Subscriptions';
+import PagoExitoso from './components/pages/PagoExitoso';
 
 render(
     <StrictMode>
@@ -21,6 +22,7 @@ render(
             <Route path=":productID" element={<Product />} />
             <Route path="invoices" element={<Invoices />} />
             <Route path="subscriptions" element={<Subscriptions />} />
+            <Route path="pago-exitoso" element={<PagoExitoso />} />
           </Route>
           <Route path="/login" element={<Login />} />
         </Routes>
